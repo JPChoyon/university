@@ -6,8 +6,8 @@
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier . --write",
-    "dev": "ts-node-dev --respawn --transpile-only src/app/server.ts",
-    "build": "tsc"
+    "dev": "node init && ts-node-dev --respawn --transpile-only src/app/server.ts",
+    "build": "node init && tsc"
   },
   "keywords": [],
   "author": "JP Choyon Khan <kotjpckhan@gmail.com>",
